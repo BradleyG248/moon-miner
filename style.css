@@ -22,9 +22,18 @@ img.stat-img{
 .auto-upgrade img{
   height:1em;
 }
+.auto-upgrade img.main-img{
+  height:2em;
+}
 .click-upgrade img{
   height:2em;
 }
 .click-upgrade{
   font-size:0.5em;
+}
+.click-upgrade button{
+  background:transparent;
+}
+.middle-images img{
+  width:10%;
 }

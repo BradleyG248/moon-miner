@@ -24,30 +24,103 @@
     <div class="container">
       <div class="row">
         <div class="col-4 d-flex justify-content-center flex-column align-items-center">
-          <h5>Multiplier n' stuff</h5>
+          <h5 id="click-multipliers">Recruits per speech:1</h5>
           <img onclick="recruit()" class="img-fluid recruit" src="helmet.png" alt="">
+          <h5>Give a speech!</h5>
         </div>
         <div class="col-4">
-          <h5><img class="stat-img" src="helmet.png" alt=""><span id="recruit-stat">: 1</span></h5>
+          <h5><img class="stat-img" src="helmet.png" alt=""><span id="recruit-stat">: 0</span></h5>
+          <h5>Recruits per second: <span id="auto-multipliers"></span></h5>
+          <div class="row">
+            <div class="col-12 middle-images">
+              <img id="booth-1" src="" alt="">
+              <img id="booth-2" src="" alt="">
+              <img id="booth-3" src="" alt="">
+              <img id="booth-4" src="" alt="">
+              <img id="booth-5" src="" alt="">
+              <img id="booth-6" src="" alt="">
+              <img id="booth-7" src="" alt="">
+              <img id="booth-8" src="" alt="">
+              <img id="booth-9" src="" alt="">
+              <img id="booth-0" src="" alt="">
+              <img id="booth-10" src="" alt="">
+              <img id="booth-11" src="" alt="">
+              <img id="booth-12" src="" alt="">
+              <img id="booth-13" src="" alt="">
+              <img id="booth-14" src="" alt="">
+              <img id="booth-15" src="" alt="">
+              <img id="booth-16" src="" alt="">
+              <img id="booth-17" src="" alt="">
+              <img id="booth-18" src="" alt="">
+            </div>
+            <div class="col-12 middle-images">
+              <img id="village-1" src="" alt="">
+              <img id="village-2" src="" alt="">
+              <img id="village-3" src="" alt="">
+              <img id="village-4" src="" alt="">
+              <img id="village-5" src="" alt="">
+              <img id="village-6" src="" alt="">
+              <img id="village-7" src="" alt="">
+              <img id="village-8" src="" alt="">
+              <img id="village-9" src="" alt="">
+              <img id="village-0" src="" alt="">
+              <img id="village-10" src="" alt="">
+              <img id="village-11" src="" alt="">
+              <img id="village-12" src="" alt="">
+              <img id="village-13" src="" alt="">
+              <img id="village-14" src="" alt="">
+              <img id="village-15" src="" alt="">
+              <img id="village-16" src="" alt="">
+              <img id="village-17" src="" alt="">
+              <img id="village-18" src="" alt="">
+            </div>
+          </div>
         </div>
         <div class="col-4">
           <h2>Upgrades</h2>
-          <div>
+          <div class="d-flex flex-row justify-content-around">
             <div class="click-upgrade d-flex flex-column align-items-center">
-              <img id="spy" src="crown.png" title="Buy This" onclick="buyClickUpgrade(0)" alt="">
-              <p>100</p>
+              <button><img src="crown.png" title="Spy" onclick="buyClickUpgrade(0)" alt=""></button>
+              <p id="spy">50</p>
             </div>
-            <div class="click-upgrade">
-
+            <div class="click-upgrade d-flex flex-column align-items-center">
+              <button><img src="crown.png" title="Advisor" onclick="buyClickUpgrade(1)" alt=""></button>
+              <p id="advisor">1000</p>
+            </div>
+            <div class="click-upgrade d-flex flex-column align-items-center">
+              <button><img src="crown.png" title="General" onclick="buyClickUpgrade(2)" alt=""></button>
+              <p id="general">5000</p>
             </div>
           </div>
-          <div class="auto-upgrade" onclick="buyAutoUpgrade(0)" id="village">
-            <h3>Buy Village</h3>
-            <h5><img src="helmet.png" alt=""><span id="village-cost">:20</span></h5>
-          </div>
-          <div class="auto-upgrade" onclick="buyAutoUpgrade(1)" id="village">
-            <h3>Buy Hut</h3>
-            <h5><img src="helmet.png" alt=""><span id="hut-cost">:50</span></h5>
+          <div class="d-flex flex-column">
+            <button class="auto-upgrade text-left" onclick="buyAutoUpgrade(1)" id="village">
+              <h4>Recruitment Booth</h4>
+              <div class="d-flex flex-row">
+                <img class="main-img" src="booth.png" alt="">
+                <h5><img src="helmet.png" alt=""><span id="booth-cost">200</span></h5>
+              </div>
+            </button>
+            <button class=" auto-upgrade text-left" onclick="buyAutoUpgrade(0)" id="village">
+              <h4>Save village</h4>
+              <div class="d-flex flex-row">
+                <img class="main-img" src="village.png" alt="">
+                <h5><img src="helmet.png" alt=""><span id="village-cost">500</span></h5>
+              </div>
+            </button>
+            <button class=" auto-upgrade text-left" onclick="buyAutoUpgrade(2)" id="village">
+              <h4>Occupy city</h4>
+              <div class="d-flex flex-row">
+                <img class="main-img" src="village.png" alt="">
+                <h5><img src="helmet.png" alt=""><span id="city-cost">2000</span></h5>
+              </div>
+            </button>
+            <button class=" auto-upgrade text-left" onclick="buyAutoUpgrade(3)" id="village">
+              <h4>Liberate District</h4>
+              <div class="d-flex flex-row">
+                <img class="main-img" src="village.png" alt="">
+                <h5><img src="helmet.png" alt=""><span id="district-cost">5000</span></h5>
+              </div>
+            </button>
           </div>
         </div>
       </div>
