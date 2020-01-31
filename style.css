@@ -1,0 +1,30 @@
+img.recruit{
+  border-radius:50%;
+  width:50%;
+}
+img.recruit:hover{
+  cursor:pointer;
+}
+.bg-main {
+  background-color:grey;
+  color:white;
+}
+img.stat-img{
+  width:1rem;
+}
+.auto-upgrade{
+  background-color:blue;
+  color:white;
+}
+.auto-upgrade:hover{
+  cursor:pointer;
+}
+.auto-upgrade img{
+  height:1em;
+}
+.click-upgrade img{
+  height:2em;
+}
+.click-upgrade{
+  font-size:0.5em;
+}

@@ -12,8 +12,50 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="startAuto()">
+  <header class="bg-head">
+    <div class="container">
+      <div class="col-12 text-center">
+        <h1>Rebellion</h1>
+      </div>
+    </div>
+  </header>
+  <main class="bg-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 d-flex justify-content-center flex-column align-items-center">
+          <h5>Multiplier n' stuff</h5>
+          <img onclick="recruit()" class="img-fluid recruit" src="helmet.png" alt="">
+        </div>
+        <div class="col-4">
+          <h5><img class="stat-img" src="helmet.png" alt=""><span id="recruit-stat">: 1</span></h5>
+        </div>
+        <div class="col-4">
+          <h2>Upgrades</h2>
+          <div>
+            <div class="click-upgrade d-flex flex-column align-items-center">
+              <img id="spy" src="crown.png" title="Buy This" onclick="buyClickUpgrade(0)" alt="">
+              <p>100</p>
+            </div>
+            <div class="click-upgrade">
 
+            </div>
+          </div>
+          <div class="auto-upgrade" onclick="buyAutoUpgrade(0)" id="village">
+            <h3>Buy Village</h3>
+            <h5><img src="helmet.png" alt=""><span id="village-cost">:20</span></h5>
+          </div>
+          <div class="auto-upgrade" onclick="buyAutoUpgrade(1)" id="village">
+            <h3>Buy Hut</h3>
+            <h5><img src="helmet.png" alt=""><span id="hut-cost">:50</span></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
